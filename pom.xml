@@ -340,5 +340,6 @@
 
   <modules>
   <module>birene-core</module>
+  <module>birene-web</module>
   </modules>
 </project>
