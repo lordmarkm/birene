@@ -10,7 +10,8 @@ require.config({
   },
   shim: {
     'angular': {
-      exports: 'angular'
+      exports: 'angular',
+      deps: ['jquery']
     },
     'angular-ui-router': {
       deps: ['angular']
@@ -21,8 +22,23 @@ require.config({
     'toaster': {
       deps: ['angular']
     },
-  },
-  deps: [
-    'bootstrap.js'
-  ]
+  }
+});
+
+require([
+    'angular',
+    'angular-animate',
+    'toaster',
+    'angular-ui-router',
+    'bootstrap',
+    'modules/common/common.module.js'
+  ], function (angular) {
+  angular.element().ready(function () {
+    angular.bootstrap(document, [
+      'ui.router',
+      'ngAnimate',
+      'toaster',
+      'common.module'
+    ]);
+  });
 });
