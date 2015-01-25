@@ -4,18 +4,14 @@
 
 <head>
 <title>Apptodate</title>
-<link rel="icon" type="image/x-icon" href="<@spring.url '/images/1412091097_48493.ico' />" />
-<link rel="stylesheet" href="<@spring.url '/lib/bootstrap-3.2.0/css/bootstrap.min.css' />" />
-<link rel="stylesheet" href="<@spring.url '/lib/sidebar.css' />" />
-<link rel="stylesheet" href="<@spring.url '/lib/app.css' />" />
-<link rel="stylesheet" href="<@spring.url '/lib/angular-ngtable/ng-table.min.css' />" />
-<link rel="stylesheet" href="<@spring.url '/lib/font-awesome-4.1.0/css/font-awesome.min.css' />" />
-<link rel="stylesheet" href="<@spring.url '/lib/angular/toaster.css' />" />
+<link rel="icon" type="image/x-icon" href="<@spring.url '/images/teachers_day_24_hot.ico' />" />
+<link rel="stylesheet" href="<@spring.url '/lib/bootstrap/dist/css/bootstrap.min.css' />" />
+<link rel="stylesheet" href="<@spring.url '/lib/font-awesome/css/font-awesome.min.css' />" />
+<link rel="stylesheet" href="<@spring.url '/lib/angularjs-toaster/toaster.css' />" />
+
 <script src="<@spring.url '/lib/jquery/jquery.min.js' />"></script>
-<style>
-    .navbar { border-radius:0; }
-</style>
-<script data-main="<@spring.url '/tenant/main.js' />" src="<@spring.url '/lib/require/require.js' />"></script>
+<script data-main="<@spring.url '/main.js' />" src="<@spring.url '/lib/requirejs/require.js' />"></script>
+
 </head>
 
 <body>
@@ -68,10 +64,3 @@
 </body>
 
 </html>
-
-<script type="text/ng-template" id="customTemplate.html">
-  <a href="javascript:;">
-      <strong>{{match.model.customerName}}</strong><br/>
-      <small>{{match.model.trackingNo}} | {{match.model.transactionType}}</small>
-  </a>
-</script>
