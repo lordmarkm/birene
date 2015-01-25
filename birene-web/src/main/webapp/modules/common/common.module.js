@@ -1,15 +1,16 @@
 define(
     [
      'angular',
-     'modules/common/controller/RootController2'
+     'modules/common/controller/RootController'
     ],
     function (angular, RootController) {
       console.debug('Configuring common.module');
-      console.debug('Root controller: ' + RootController);
-      console.debug('Angular: ' + angular);
       angular.module('common.module', [])
 
-        .config(['$stateProvider', function ($stateProvider) {
+        .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+
+          $urlRouterProvider
+            .when('', '/');
 
           $stateProvider.state('default', {
             url: '/',

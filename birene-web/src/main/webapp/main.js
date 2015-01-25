@@ -31,14 +31,16 @@ require([
     'toaster',
     'angular-ui-router',
     'bootstrap',
-    'modules/common/common.module.js'
+    'modules/common/common.module.js',
+    'modules/guest/guest.module.js'
   ], function (angular) {
   angular.element().ready(function () {
     angular.bootstrap(document, [
       'ui.router',
       'ngAnimate',
       'toaster',
-      'common.module'
+      'common.module',
+      'guest.module'
     ]);
   });
 });
