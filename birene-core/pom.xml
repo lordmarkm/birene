@@ -26,6 +26,10 @@
       <groupId>baldy.commons</groupId>
       <artifactId>baldy-commons-data-mysql</artifactId>
     </dependency>
+    <dependency>
+      <groupId>baldy.commons</groupId>
+      <artifactId>baldy-commons-web</artifactId>
+    </dependency>
   </dependencies>
 
   <build>

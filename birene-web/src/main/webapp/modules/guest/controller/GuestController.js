@@ -1,7 +1,8 @@
 define(function () {
-    return ['$scope',
-      function ($scope) {
+    return ['$scope', 'ClassService',
+      function ($scope, ClassService) {
         console.debug('Guest controller initialized.');
+        $scope.classes = ClassService.query();
       }
     ];
   }

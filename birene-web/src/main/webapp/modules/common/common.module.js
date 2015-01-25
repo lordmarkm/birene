@@ -1,12 +1,14 @@
 define(
     [
      'angular',
-     'modules/common/controller/RootController'
+     'modules/common/controller/RootController',
+     'modules/common/service/ClassService'
     ],
-    function (angular, RootController) {
+    function (angular, RootController, ClassService) {
       console.debug('Configuring common.module');
       angular.module('common.module', [])
 
+        .service('ClassService', ClassService)
         .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
           $urlRouterProvider
