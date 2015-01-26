@@ -35,6 +35,7 @@ require([
     'toaster',
     'angular-ui-router',
     'bootstrap',
+    'filters.js',
     'modules/common/common.module.js',
     'modules/guest/guest.module.js'
   ], function (angular) {
@@ -44,6 +45,7 @@ require([
       'ngResource',
       'ngAnimate',
       'toaster',
+      'app.filters',
       'common.module',
       'guest.module'
     ]);

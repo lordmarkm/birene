@@ -1,0 +1,17 @@
+<h2>Birene Tutorial and Review Administrators</h2>
+<div ng-repeat="admin in tutorialCenterAdmins">
+  <dl class="dl-horizontal">
+    <dt>Name
+    <dd>{{admin.name | name}}
+  </dl>
+</div>
+
+<h2>Site Administrators</h2>
+<div ng-repeat="admin in siteAdmins">
+  <dl class="dl-horizontal">
+    <dt>Name
+    <dd>{{admin.name | name}}
+  </dl>
+</div>
+
+<p><a ui-sref="default.guest.splash">Back</a>

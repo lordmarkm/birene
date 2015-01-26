@@ -44,7 +44,7 @@ public class BirenePersistenceConfig {
 
         //Enabled on purge profile
         String importFiles = env.getProperty("hibernate.hbm2ddl.import_files");
-        if (null != importFiles) {
+        if (null != importFiles && importFiles.length() > 0) {
             properties.put("hibernate.hbm2ddl.import_files", importFiles);
         }
 

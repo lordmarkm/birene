@@ -1,0 +1,2 @@
+insert into PERSON(id,deleted,given_name,middle_name,surname,PERSON_TYPE) values (1,0,"Mark Baldwin","B.","Martinez","SITE_ADMIN");
+insert into PERSON(id,deleted,given_name,middle_name,surname,PERSON_TYPE) values (2,0,"Dulcegin","B.","Ojastro","TUTORIAL_CENTER_ADMIN");

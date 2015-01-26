@@ -2,13 +2,17 @@ define(
     [
      'angular',
      'modules/common/controller/RootController',
-     'modules/common/service/ClassService'
+     'modules/common/service/ClassService',
+     'modules/common/service/PersonService',
+     'modules/common/controller/AboutUsController',
+     'modules/common/resolve/AdminsResolve'
     ],
-    function (angular, RootController, ClassService) {
+    function (angular, RootController, ClassService, PersonService, AboutUsController, AdminsResolve) {
       console.debug('Configuring common.module');
       angular.module('common.module', [])
 
         .service('ClassService', ClassService)
+        .service('PersonService', PersonService)
         .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 
           $urlRouterProvider
@@ -23,6 +27,12 @@ define(
           .state('default.splash', {
             url: '',
             templateUrl: 'modules/common/view/splash.html'
+          })          
+          .state('default.about_us', {
+            url: 'about_us',
+            templateUrl: 'modules/common/view/about_us.html',
+            controller: AboutUsController,
+            resolve: AdminsResolve
           });
 
         }]);

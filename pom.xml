@@ -50,6 +50,13 @@
     <dependencies>
       <!-- PROJECT -->
       <dependency>
+        <groupId>birene</groupId>
+        <artifactId>birene-core</artifactId>
+        <version>${project.version}</version>
+      </dependency>
+
+      <!-- Baldy Commons -->
+      <dependency>
         <groupId>baldy.commons</groupId>
         <artifactId>baldy-commons-models</artifactId>
         <version>${baldy-commons.version}</version>
@@ -339,7 +346,8 @@
   </build>
 
   <modules>
-  <module>birene-core</module>
-  <module>birene-web</module>
+    <module>birene-core</module>
+    <module>birene-web</module>
+    <module>birene-data-birene</module>
   </modules>
 </project>

@@ -12,6 +12,10 @@
 
   <dependencies>
     <dependency>
+      <groupId>birene</groupId>
+      <artifactId>birene-core</artifactId>
+    </dependency>
+    <dependency>
       <groupId>baldy.commons</groupId>
       <artifactId>baldy-commons-web</artifactId>
     </dependency>
