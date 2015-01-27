@@ -1,8 +1,8 @@
 define(function () {
-    return ['$scope', 'ClassService',
-      function ($scope, ClassService) {
+    return ['$scope', 'LevelService', 'ClassService',
+      function ($scope, LevelService, ClassService) {
         console.debug('Guest controller initialized.');
-        $scope.classes = ClassService.query();
+        $scope.levels = LevelService.query();
       }
     ];
   }

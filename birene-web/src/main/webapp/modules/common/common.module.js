@@ -2,15 +2,17 @@ define(
     [
      'angular',
      'modules/common/controller/RootController',
+     'modules/common/service/LevelService',
      'modules/common/service/ClassService',
      'modules/common/service/PersonService',
      'modules/common/controller/AboutUsController',
      'modules/common/resolve/AdminsResolve'
     ],
-    function (angular, RootController, ClassService, PersonService, AboutUsController, AdminsResolve) {
+    function (angular, RootController, LevelService, ClassService, PersonService, AboutUsController, AdminsResolve) {
       console.debug('Configuring common.module');
       angular.module('common.module', [])
 
+        .service('LevelService', LevelService)
         .service('ClassService', ClassService)
         .service('PersonService', PersonService)
         .config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
