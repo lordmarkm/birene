@@ -24,9 +24,19 @@
       <artifactId>birene-data-birene</artifactId>
       <version>${project.version}</version>
     </dependency>
+
+    <dependency>
+      <groupId>tyrael-commons</groupId>
+      <artifactId>tyrael-commons-mapper</artifactId>
+    </dependency>
+
     <dependency>
       <groupId>baldy.commons</groupId>
       <artifactId>baldy-commons-models</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>baldy.commons</groupId>
+      <artifactId>baldy-commons-dtos</artifactId>
     </dependency>
     <dependency>
       <groupId>baldy.commons</groupId>
@@ -44,6 +54,7 @@
       <properties>
         <hibernate.hbm2ddl.auto>create</hibernate.hbm2ddl.auto>
         <hibernate.hbm2ddl.import_files>
+          /META-INF/sql/levels.sql,
           /META-INF/sql/person.sql
         </hibernate.hbm2ddl.import_files>
       </properties>

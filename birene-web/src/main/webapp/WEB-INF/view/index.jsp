@@ -21,7 +21,7 @@
   <div id="wrapper">
     <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
       <div class="navbar-header">
-        <a ui-sref="default.guest.splash" class="navbar-brand">Birene Tutorial and Review</a>
+        <a ui-sref="default.guest.splash" class="navbar-brand"><@spring.message "main.banner" /></a>
       </div>
       <ul class="nav navbar-nav">
         <li ui-sref-active="active"><a ui-sref="default.splash">Home</a></li>

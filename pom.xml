@@ -55,6 +55,13 @@
         <version>${project.version}</version>
       </dependency>
 
+      <!-- Tyrael -->
+      <dependency>
+        <groupId>tyrael-commons</groupId>
+        <artifactId>tyrael-commons-mapper</artifactId>
+        <version>${tyrael.version}</version>
+      </dependency>
+
       <!-- Baldy Commons -->
       <dependency>
         <groupId>baldy.commons</groupId>
