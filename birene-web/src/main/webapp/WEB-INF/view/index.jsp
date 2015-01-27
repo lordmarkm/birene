@@ -29,16 +29,19 @@
       </ul>
     </nav>
   </div>
-  <div class="container-fluid">
+
+  <!-- Main Banner -->
+  <div class="container">
     <div class="row">
       <h1>Banner</h1>
     </div>
   </div>
+
   <!-- Main Content -->
-  <div class="container-fluid">
+  <div class="container">
     <toaster-container toaster-options="{'time-out': 4000, 'limit' : 3}"></toaster-container>
     <div class="row">
-      <div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+      <div class="main">
         <div ui-view>Loading resources...</div>
       </div>
     </div>

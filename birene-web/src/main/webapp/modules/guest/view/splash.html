@@ -1,9 +1,6 @@
-{{levels}}
-
 <ul class="nav nav-tabs">
-  <li role="presentation" class="active"><a href="#">Early childhood</a></li>
-  <li role="presentation"><a href="#">Elementary</a></li>
-  <li role="presentation"><a href="#">High School</a></li>
-  <li role="presentation"><a href="#">College</a></li>
-  <li role="presentation"><a href="#">Graduate</a></li>
+  <li role="presentation" ui-sref-active="active"><a ui-sref="default.guest">Overview</a></li>
+  <li ng-repeat="level in levels" role="presentation" ui-sref-active="active">
+    <a ui-sref="default.guest.{{level.code}}">{{level.name}}</a>
+  </li>
 </ul>

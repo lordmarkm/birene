@@ -6,5 +6,5 @@
     <version>1.0</version>
   </parent>
   <artifactId>birene-data-birene</artifactId>
-  <name>Birene Data :: Actual Birene</name>
+  <name>Birene Data :: Birene Default Data</name>
 </project>

@@ -2,6 +2,7 @@ package com.birene.core.models;
 
 import java.util.List;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
@@ -17,7 +18,11 @@ import com.birene.core.reference.GroupType;
 @Entity(name = "TUTORIAL_GROUP")
 public class Group extends BaseNamedEntity {
 
+    @Column(name = "CODE", nullable = false)
+    private String code;
+
     @Enumerated(EnumType.STRING)
+    @Column(name = "TYPE", nullable = false)
     private GroupType type;
 
     @ManyToOne
@@ -50,6 +55,14 @@ public class Group extends BaseNamedEntity {
 
     public void setChildren(List<Group> children) {
         this.children = children;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
 }

@@ -9,6 +9,7 @@ import com.birene.core.reference.GroupType;
  */
 public class GroupInfo extends BaseNamedDto {
 
+    private String code;
     private GroupType type;
     private List<GroupInfo> children;
 
@@ -26,6 +27,14 @@ public class GroupInfo extends BaseNamedDto {
 
     public void setType(GroupType type) {
         this.type = type;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 
 }
