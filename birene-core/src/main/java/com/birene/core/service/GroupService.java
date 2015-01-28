@@ -13,6 +13,10 @@ import com.birene.core.reference.GroupType;
  */
 public interface GroupService extends JpaRepository<Group, Long>, GroupServiceCustom {
 
+    boolean ENABLED = true;
+    boolean DISABLED = false;
+
     List<Group> findByType(GroupType level, Sort sort);
+    List<Group> findByTypeAndEnabled(GroupType level, boolean enabled, Sort sort);
 
 }

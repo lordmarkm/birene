@@ -10,7 +10,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
-import org.codehaus.jackson.annotate.JsonBackReference;
+import org.hibernate.annotations.Type;
 
 import com.baldy.commons.models.BaseNamedEntity;
 import com.birene.core.reference.GroupType;
@@ -28,9 +28,13 @@ public class Group extends BaseNamedEntity {
     @ManyToOne
     @JoinColumn(name = "PARENT_ID")
     private Group parent;
-    
+
     @OneToMany(mappedBy = "parent")
     private List<Group> children;
+
+    @Column(name = "ENABLED", nullable = false)
+    @Type(type = "yes_no")
+    private boolean enabled;
 
     public GroupType getType() {
         return type;
@@ -40,7 +44,6 @@ public class Group extends BaseNamedEntity {
         this.type = type;
     }
 
-    @JsonBackReference
     public Group getParent() {
         return parent;
     }
@@ -63,6 +66,14 @@ public class Group extends BaseNamedEntity {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public boolean isEnabled() {
+        return enabled;
+    }
+
+    public void setEnabled(boolean enabled) {
+        this.enabled = enabled;
     }
 
 }

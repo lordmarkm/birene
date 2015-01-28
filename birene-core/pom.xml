@@ -54,7 +54,7 @@
       <properties>
         <hibernate.hbm2ddl.auto>create</hibernate.hbm2ddl.auto>
         <hibernate.hbm2ddl.import_files>
-          /META-INF/sql/person.sql,/META-INF/sql/levels.sql
+          /META-INF/sql/person.sql,/META-INF/sql/levels.sql,/META-INF/sql/grades.sql
         </hibernate.hbm2ddl.import_files>
       </properties>
     </profile>

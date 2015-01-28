@@ -9,7 +9,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Sort;
 import org.springframework.data.domain.Sort.Direction;
 import org.springframework.http.ResponseEntity;
-import org.springframework.transaction.annotation.Transactional;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -25,10 +24,9 @@ public class LevelResource {
     private GroupService groupService;
 
     @RequestMapping(method = GET)
-    @Transactional
     public ResponseEntity<List<GroupInfo>> getLevels() {
         Sort sort = new Sort(Direction.ASC, "id");
-        List<GroupInfo> levels = groupService.transactionalFindByType(GroupType.LEVEL, sort);
+        List<GroupInfo> levels = groupService.transactionalFindByType(GroupType.LEVEL, GroupService.ENABLED, sort);
         return new ResponseEntity<List<GroupInfo>>(levels, OK);
     }
 

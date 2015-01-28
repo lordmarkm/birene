@@ -24,8 +24,8 @@ public class GroupServiceCustomImpl extends MappingService<Group, GroupInfo>
     private GroupService service;
 
     @Override
-    public List<GroupInfo> transactionalFindByType(GroupType level, Sort sort) {
-        return toDto(service.findByType(level, sort));
+    public List<GroupInfo> transactionalFindByType(GroupType level, boolean enabled, Sort sort) {
+        return toDto(service.findByTypeAndEnabled(level, enabled, sort));
     }
 
 }

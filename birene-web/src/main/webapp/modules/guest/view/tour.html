@@ -1,0 +1,8 @@
+<ul class="nav nav-tabs">
+  <li role="presentation" ui-sref-active="active"><a ui-sref="default.guest.tour.overview">Overview</a></li>
+  <li ng-repeat="level in levels" role="presentation" ui-sref-active="active">
+    <a ui-sref="default.guest.tour.{{level.code}}">{{level.name}}</a>
+  </li>
+</ul>
+
+<ui-view></ui-view>
