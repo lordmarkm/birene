@@ -38,19 +38,19 @@ define(
           })
           .state('default.guest.tour.ELM', {
             url: '/ELM',
-            templateUrl: 'modules/guest/view/tour_ECH.html'
+            templateUrl: 'modules/guest/view/tour_default.html'
           })
           .state('default.guest.tour.HSC', {
             url: '/HSC',
-            templateUrl: 'modules/guest/view/tour_ECH.html'
+            templateUrl: 'modules/guest/view/tour_default.html'
           })
           .state('default.guest.tour.COL', {
             url: '/COL',
-            templateUrl: 'modules/guest/view/tour_ECH.html'
+            templateUrl: 'modules/guest/view/tour_default.html'
           })
           .state('default.guest.tour.GRD', {
             url: '/GRD',
-            templateUrl: 'modules/guest/view/tour_ECH.html'
+            templateUrl: 'modules/guest/view/tour_default.html'
           });
 
         }]);

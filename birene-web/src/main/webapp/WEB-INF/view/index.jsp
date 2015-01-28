@@ -6,6 +6,8 @@
 <title>Birene Tutorial</title>
 <link rel="icon" type="image/x-icon" href="<@spring.url '/images/teachers_day_24_hot.ico' />" />
 <link rel="stylesheet" href="<@spring.url '/lib/bootstrap/dist/css/bootstrap.min.css' />" />
+<link rel="stylesheet" href="<@spring.url '/lib/bootstrap-flat/css/bootstrap-flat.min.css' />" />
+<link rel="stylesheet" href="<@spring.url '/lib/bootstrap-flat/css/bootstrap-flat-extras.min.css' />" />
 <link rel="stylesheet" href="<@spring.url '/lib/font-awesome/css/font-awesome.min.css' />" />
 <link rel="stylesheet" href="<@spring.url '/lib/angularjs-toaster/toaster.css' />" />
 
