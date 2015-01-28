@@ -10,6 +10,7 @@
 <link rel="stylesheet" href="<@spring.url '/lib/bootstrap-flat/css/bootstrap-flat-extras.min.css' />" />
 <link rel="stylesheet" href="<@spring.url '/lib/font-awesome/css/font-awesome.min.css' />" />
 <link rel="stylesheet" href="<@spring.url '/lib/angularjs-toaster/toaster.css' />" />
+<link rel="stylesheet" href="<@spring.url '/lib/app.css' />" />
 
 <link rel="stylesheet" href="<@spring.url '/lib/metisMenu/dist/metisMenu.css' />" />
 <link rel="stylesheet" href="<@spring.url '/lib/startbootstrap-sb-admin-2/dist/css/sb-admin-2.css' />" />
