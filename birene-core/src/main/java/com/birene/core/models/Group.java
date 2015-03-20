@@ -7,6 +7,8 @@ import javax.persistence.Entity;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
+import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
 import javax.persistence.OneToMany;
 
@@ -35,6 +37,18 @@ public class Group extends BaseNamedEntity {
     @Column(name = "ENABLED", nullable = false)
     @Type(type = "yes_no")
     private boolean enabled;
+
+    @ManyToOne
+    @JoinColumn(name = "PERSON_IN_CHARGE_ID")
+    private Person personInCharge;
+
+    @ManyToMany
+    @JoinTable(
+        name = "GROUP_INSTRUCTORS",
+        joinColumns=@JoinColumn(name = "GROUP_ID", referencedColumnName="id"),
+        inverseJoinColumns=@JoinColumn(name = "INSTRUCTOR_ID", referencedColumnName="id")
+    )
+    private List<Person> instructors;
 
     public GroupType getType() {
         return type;
@@ -74,6 +88,22 @@ public class Group extends BaseNamedEntity {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
+    }
+
+    public Person getPersonInCharge() {
+        return personInCharge;
+    }
+
+    public void setPersonInCharge(Person personInCharge) {
+        this.personInCharge = personInCharge;
+    }
+
+    public List<Person> getInstructors() {
+        return instructors;
+    }
+
+    public void setInstructors(List<Person> instructors) {
+        this.instructors = instructors;
     }
 
 }

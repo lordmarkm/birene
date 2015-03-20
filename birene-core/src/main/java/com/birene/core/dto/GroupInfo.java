@@ -11,6 +11,8 @@ public class GroupInfo extends BaseNamedDto {
 
     private String code;
     private GroupType type;
+    private PersonInfo personInCharge;
+    private List<PersonInfo> instructors;
     private List<GroupInfo> children;
 
     public List<GroupInfo> getChildren() {
@@ -35,6 +37,22 @@ public class GroupInfo extends BaseNamedDto {
 
     public void setCode(String code) {
         this.code = code;
+    }
+
+    public PersonInfo getPersonInCharge() {
+        return personInCharge;
+    }
+
+    public void setPersonInCharge(PersonInfo personInCharge) {
+        this.personInCharge = personInCharge;
+    }
+
+    public List<PersonInfo> getInstructors() {
+        return instructors;
+    }
+
+    public void setInstructors(List<PersonInfo> instructors) {
+        this.instructors = instructors;
     }
 
 }

@@ -37,6 +37,7 @@ require([
     'bootstrap',
     'filters.js',
     'modules/common/common.module.js',
+    'modules/admin/admin.module.js',
     'modules/guest/guest.module.js'
   ], function (angular) {
   angular.element().ready(function () {
@@ -47,6 +48,7 @@ require([
       'toaster',
       'app.filters',
       'common.module',
+      'admin.module',
       'guest.module'
     ]);
   });

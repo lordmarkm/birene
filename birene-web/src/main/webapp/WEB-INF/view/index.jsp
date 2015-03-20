@@ -30,6 +30,7 @@
         <li ui-sref-active="active"><a ui-sref="default.splash">Home</a></li>
         <li ng-class="{active: includes('default.guest.tour')}"><a ui-sref="default.guest.tour.overview">Courses</a>
         <li ui-sref-active="active"><a ui-sref="default.about_us">About us</a></li>
+        <li ui-sref-active="active"><a ui-sref="default.admin.splash">Admin</a>
       </ul>
     </nav>
   </div>

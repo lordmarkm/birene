@@ -11,7 +11,7 @@
 
   <properties>
     <project.version>1.0</project.version>
-    <tyrael.version>1.0</tyrael.version>
+    <tyrael.version>1.1</tyrael.version>
     <baldy-commons.version>3.0</baldy-commons.version>
 
     <maven.jetty.version>8.1.14.v20131031</maven.jetty.version>
@@ -356,5 +356,6 @@
     <module>birene-core</module>
     <module>birene-web</module>
     <module>birene-data-birene</module>
+    <module>birene-commons</module>
   </modules>
 </project>

@@ -21,6 +21,11 @@
   <dependencies>
     <dependency>
       <groupId>birene</groupId>
+      <artifactId>birene-commons</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>birene</groupId>
       <artifactId>birene-data-birene</artifactId>
       <version>${project.version}</version>
     </dependency>
