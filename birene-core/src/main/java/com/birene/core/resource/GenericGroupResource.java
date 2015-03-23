@@ -6,6 +6,7 @@ import static org.springframework.web.bind.annotation.RequestMethod.GET;
 import java.security.Principal;
 
 import org.slf4j.Logger;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
@@ -23,7 +24,9 @@ import com.tyrael.commons.dto.PageInfo;
 public abstract class GenericGroupResource
     extends GenericController {
 
-    protected abstract GroupService groupService();
+    @Autowired
+    protected GroupService groupService;
+
     protected abstract GroupType groupType();
     protected abstract Logger logger();
 
@@ -32,9 +35,9 @@ public abstract class GenericGroupResource
             @RequestParam int page,
             @RequestParam int count) {
 
-        logger().debug("User query. Principal={}", name(principal));
+        logger().debug("User query. type={}, principal={}", groupType(), name(principal));
 
-        PageInfo<GroupInfo> pageResponse = groupService().page(groupType(), null, page, count);
+        PageInfo<GroupInfo> pageResponse = groupService.page(groupType(), null, page, count);
         return new ResponseEntity<>(pageResponse, OK);
     }
 

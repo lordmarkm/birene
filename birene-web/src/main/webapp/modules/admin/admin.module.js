@@ -13,7 +13,7 @@ define(
 
           $stateProvider.state('default.admin', {
             url: 'admin',
-            template: '<ui-view>Admin root</ui-view>',
+            template: '<ui-view></ui-view>',
             abstract: true,
             controller: AdminController
           })

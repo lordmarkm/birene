@@ -1,2 +1,2 @@
-insert into TUTORIAL_GROUP(id,code,deleted,description,name,type,parent_id,enabled) values (10,"GR1",0,"Early Childhood - Grade I","Grade I","GRADE",2,"Y");
-insert into TUTORIAL_GROUP(id,code,deleted,description,name,type,parent_id,enabled) values (11,"GR2",0,"Early Childhood - Grade II","Grade II","GRADE",2,"Y");
+insert into TUTORIAL_GROUP(id,code,deleted,description,name,type,parent_id,enabled) values (1000,"GR1",0,"Early Childhood - Grade I","Grade I","GRADE",2,"Y");
+insert into TUTORIAL_GROUP(id,code,deleted,description,name,type,parent_id,enabled) values (1001,"GR2",0,"Early Childhood - Grade II","Grade II","GRADE",2,"Y");

@@ -11,14 +11,14 @@ import com.birene.core.reference.GroupType;
  * @author mbmartinez
  */
 @RestController
-@RequestMapping("/class")
-public class ClassResource extends GenericGroupResource {
+@RequestMapping("/course")
+public class CourseResource extends GenericGroupResource {
 
-    private static final Logger LOG = LoggerFactory.getLogger(ClassResource.class);
+    private static final Logger LOG = LoggerFactory.getLogger(CourseResource.class);
 
     @Override
     protected GroupType groupType() {
-        return GroupType.CLASS;
+        return GroupType.COURSE;
     }
 
     @Override

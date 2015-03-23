@@ -26,7 +26,8 @@
     "angularjs-toaster": ">=0.4.10",
     "requirejs": "latest",
     "angular-ui-router": "latest",
-    "angular-resource": "latest"
+    "angular-resource": "latest",
+    "ng-table": "latest"
   },
   "resolutions": {
     "bootstrap": "~3.3.0",
